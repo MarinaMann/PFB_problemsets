@@ -1,0 +1,100 @@
+  278  head sorted.out 
+  279  ls -l
+  280  head -n 100 wholeCuffdiff.sorted.out > top100wholecuffdiff.sorted.out
+  281  head top100wholecuffdiff.sorted.out 
+  282  head top100wholecuffdiff.sorted.out history
+  283  history
+  284  ls -l
+  285  head sorted.out 
+  286  head -n 100 sorted.out topPos100wholeCuffdiff.sorted.out
+  287  head -n 100 sorted.out > topPos100wholeCuffdiff.sorted.out
+  288  head topPos100wholeCuffdiff.sorted.out 
+  289  ls -l
+  290  mv top100wholecuffdiff.sorted.out topNeg100wholecuffdiff.sorted.out 
+  291  ls -l
+  292  cut 1 topPos100wholeCuffdiff.sorted.out > topPos100genes.out
+  293  cut -f 1 topPos100wholeCuffdiff.sorted.out > topPos100genes.out
+  294  head topPos100genes.out 
+  295  man uniq
+  296  uniq topPos100genes.out pos.differentially.expressed.genes.txt 
+  297  head pos.differentially.expressed.genes.txt 
+  298  ls -l
+  299  git status
+  300  git add *
+  301  git commit 'homework 1 files from cuffdiff arrangements' 
+  302  git commit -m 'homework 1 files from cuffdiff arrangements' 
+  303  git push
+  304  ls -l
+  305  mkdir problemset1
+  306  mv * problemset1/
+  307  cd problemset1/
+  308  ls -l
+  309  mv README.md ../
+  310  mv cuffdiff.txt ../
+  311  mv cancer_genes.fasta ../
+  312  cd ..
+  313  ls -l
+  314  mdir files
+  315  mkdir files
+  316  cd problemset1/
+  317  ls -l
+  318  cd ..
+  319  ls -l
+  320  mc cancer_genes.fasta files/
+  321  cd files/
+  322  ls -l
+  323  cd ..
+  324  git add files/cancer_genes.fasta
+  325  ls -l
+  326  mv cancer_genes.fasta files/
+  327  ls -l
+  328  git add files/cancer_genes.fasta 
+  329  git commit -m 'adding cancer_genes.fasta to files directory'
+  330  git push
+  331  vi mysequences.txt
+  332  ls -l
+  333  vi files/mysequences.txt
+  334  head files/mysequences.txt 
+  335  cd files/
+  336  vi mysequences.txt 
+  337  rm mysequences.txt 
+  338  vi mysequences.txt
+  339  git add mysequences.txt 
+  340  git commit -m 'playing in vim'
+  341  git push
+  342  ls -l
+  343  pwd
+  344  mkdir ../fastas
+  345  cd ../fastas/
+  346  ls-l
+  347  ls -l
+  348  cd ../files/
+  349  mv cancer_genes.fasta ../fastas/
+  350  ls
+  351  cd ../fastas/
+  352  ls
+  353  git add *
+  354  git commit -m 'new directory'
+  355  git push
+  356  vi oops
+  357  git add oops 
+  358  git commit -m 'oops'
+  359  git push
+  360  git rm oops 
+  361  git commit -m 'removing oops'
+  362  git push
+  363  vi oops2
+  364  git add
+  365  git add oops2 
+  366  git commit -m 'oops2'
+  367  git push
+  368  rm oops2 
+  369  git add oops2
+  370  git commit -m 'removing oops2'
+  371  git push
+  372  ls -l
+  373  vi never
+  374  git add never 
+  375  git reset never 
+  376  history 
+  377  history | tail -n 100 > unixbasics.history.txt

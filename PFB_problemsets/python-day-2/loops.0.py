@@ -12,5 +12,12 @@ print(string_taxa_with)
 species = string_taxa_with.split(',')
 print(species)
 
+print(species[1])
+print(type(species))
+
+print(sorted(species)) 
+
+print(sorted(species, key=len))
+
 
 

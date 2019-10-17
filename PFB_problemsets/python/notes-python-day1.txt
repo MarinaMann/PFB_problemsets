@@ -1,0 +1,16 @@
+#first up, make sure that the terminal is adjusted properly.
+#reate am executable file .vimrc using vi in the home directory and pasting the following code into it:
+
+set tabstop=2
+set number
+syntax on
+
+#since I put this special file .vimrc in a overarching directory, it should load every time I open my termnial.
+
+#We learned about special operations, useful for math, for showing even/odd, for comparing numbers/quantities.
+#we learned if/else/elif statements, and how to nest them.
+#From the nesting, we learned how important the tabs are, and how to make if statements inclusive or exclusive to different subsets.
+
+#we continued to add/commit/push our new files onto our git repositories. 
+
+ 

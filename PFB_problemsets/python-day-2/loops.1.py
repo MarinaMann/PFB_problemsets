@@ -2,10 +2,22 @@
 
 #Problemset python4 - lists and loops
 
-num = 1
-while num <101:
-	print(num)
-	num+=1
+#goal to find factorial of 1000
+
+#cheating way...
+import math
+x = 1000
+print(math.factorial(x))
+
+#using while loop to find factorial of 1000
+n = range(0,1000)
+fac = n*(n+1)
+while n < 1001 :
+	:w
+:q
+
+	fac = n+=1
+
 
 
 

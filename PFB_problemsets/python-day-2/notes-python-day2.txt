@@ -1,0 +1,41 @@
+Today we learn abou tstrings first!
+
+#today we learned about a shit tone of material, that all seems simple on the surface, and is actually quite detailed when you get into it.
+##WHat I learned today##
+#While loops: Don't attempt to solve/write them after 9pm, preferably 8pm, or your brain will implode.
+#Ask the TA's for help before 9pm, so I can listen to their advice and act upon it effectively.
+
+#I practiced counting the elements in strings like sequences, using code
+
+#count the number of each letter in the sequence of DNA
+print(DNA.count('A'), "is number of A's")
+#where DNA is something like 'atcg' or 'atAT' or 'ATCG'
+In order to count the total number of A's, whether upper or lower case, fist convert the whole string to upper case:
+
+DNA.upper() 
+
+#alternativly, replace all the lower cases with upper cases, then simply count all A's.
+bigA = DNA.replace('a','A')
+
+#Additionally, I worked with lists vs strings. They are definietly not the same, and have to be accessed and manipulated slightly differently.
+
+#the command below says: create a new variable called "string_taxa_with", by joining together all the individual 'strings' in list "taxa" so there are no spaces and it's one big string, but you can differentiate the old strings using ','
+#THis is great because it turns a list into a string
+string_taxa_with =  ','.join(taxa)
+
+#The string I made above can be split back apart into multiple strings using the ',' deliminator. 
+#Deliminator can be anything, but I"ve chosen the comma.
+species = string_taxa_with.split(',')
+
+#Sort and print the list of strings by how many characters are in each string. It automatically sorts shortest to longest.
+print(sorted(species, key=len))
+
+
+Then, we had questions about loops: WHile loops and for loops. 
+--------- Do these questions ---------
+
+Then, we had questions (homework 3 for today) about dictionaries.
+----------Do these questions ---------
+
+
+

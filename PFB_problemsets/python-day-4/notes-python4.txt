@@ -1,0 +1,43 @@
+Python 8 problemset
+
+After our lesson describing how to add error messages and custom error messages, I love the idea, and it's a shame more people can't make thse more readable. 
+So, I'm going to try fixing this on my own files at least. 
+One of my biggest issues is downloading a file and then not knowing how to get it to run. 
+So I've added this paragraph to the beginning of my file, so that if someone opens it, they can figure out how to make it executable:
+
+#!/usr/bin/env python3
+  
+   """Must initialize file as a python runnable script by the following command:
+       chmod +x <file-to-run.py>
+     Then retry running the script using ./<script_name.py>"""
+
+Question #1 asks for reading in a file using "user input". To me, this means that from the commandline, the user will run the script followed by the input file name. 
+This requires use of the following block of logic: 
+
+import sys
+  9
+ 10 file = ''
+ 11 try:
+ 12   file = sys.argv[1]
+ 13   print("User provided file:", file)
+ 14   name = open(file,'r')
+ 15   for lines in name:
+ 16     lines = lines.rstrip()
+ 17     print(line)
+ 18 except:
+ 19   print("Please provide a file name in commandline, $<script_name.py> <file.in> 
+
+THis block is great because if you try to run the file without providing a file name after the script.py in the command line, it'll return the error "Please provide a file name"
+
+The second part of this question is making the sequences accessible by their ID's, i.e making a dictionary of keys which are IDs, and values wwhich are sequences.
+
+headers = re.search(r'^>.+', lines) 
+This search grabs the entire first line of a fasta file header/sequence groups. 
+Stores the header in object "headers"
+
+
+
+
+
+
+

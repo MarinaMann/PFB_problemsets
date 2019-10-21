@@ -7,6 +7,7 @@
 import sys
 import re
 
+
 file = ''
 try:
 	file = sys.argv[1]
@@ -14,9 +15,11 @@ try:
 	fasta = open(file,'r')
 	for lines in fasta:
 		lines = lines.rstrip('\n')
-		headers = re.search(r'^>.+', lines) #retrieves whole header line
-		print(headers)
-		
+		for heads in re.search(r'^>.+', lines): #retrieves whole header line
+			print(heads)
+		for seqs in re.search(r'^\w\S+', lines): #retrieves the sequences lines, since the lines must start with a word character, do not include spaces, and match one or more times. 
+			print(seqs)
+	
 #print(bigDNA.count('T'), "is number of T's and t's")
 
 

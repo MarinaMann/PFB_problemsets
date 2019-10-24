@@ -1,0 +1,42 @@
+Today, we learned about clases, creating them, populating them, calling them.
+
+For the NGS workshop tutorial, go to the GitHub web page and follow the links for workshop > NGS > NGS workshop tutorial
+The link is broken on the normal assignments page
+
+bwa mem -R '@RG\tID:SRR10178655\tSM:Trex\tLB:HAMMOND01\tPL:ILLUMINA' Scerevisiae.fasta SRR10178655_1_passed.fastq.gz SRR10178655_2_passed.fastq.gz | samtools view -b - >SRR10178655.bamR
+
+The bwa alignment command above has an interesting feature, i.e all the letters contained between ''. This is a shortcut, that makes life easier for later analyses. Since alignments produce sam files, and sam files have header lines that start with @, it's clera to see that we're writing a couple lines of header for a sam file. 
+
+While bwa is running, I noticed many instances of the print-out: skip orientation RR as there are not enough pairs
+bwa doesn't need me to tell it which way my paired end (PE) reads align. It runs so fast that it tries all orientations of the reads (FF, FR, RF, RR) but obviously 3/4 won't work, so it prints that line every time it doesn't work. 
+
+
+FINAL PROJECTS:
+---------------
+Projects are groups of 3-6, each has a TA, and are the best part of the project. 
+Work in a team. Try to tackle a small but real problem.
+For example, data sets are small, so they run fast, but it's an actual question. 
+Projects should use as many things as we've learned 
+
+Can propose as many projects as you want
+Proposal is super simple, no more than a page. Basic outline of idea, what kind of code, etc. 
+Goal is to code in python, and to make a real leap in my python programming and understanding.
+To tie together everything. 
+
+1 page idea due to simon and sophia by midnight Thursday. Emphasize the python coding. 
+Build and implement pipelines. 
+
+Last day, 20 min per team presentation on work, accomplished, learned, mistakes, etc. 
+Share the experience. 
+THen we go to banquet! 
+
+
+
+
+
+
+
+
+
+
+
